@@ -1,0 +1,408 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* Dark text color */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+}
+
+#intro {
+    color: white;
+}
+
+header {}
+
+.logo img {
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#intro-image img {
+    width: 450px;
+    margin-left: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+
+/* Navigation buttons styling */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #E130FD;
+    /* Hover background color */
+    color: white;
+    /* White text color on hover */
+}
+
+/* Add a subtle shadow to the buttons */
+.nav-links a {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a smooth transition for the shadow */
+.nav-links a:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add some padding to the buttons for spacing */
+.nav-links a {
+    padding: 10px 20px;
+}
+
+/* Add a small border at the bottom for a subtle underline effect */
+.nav-links a {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    border-bottom-color: #fff;
+    /* White underline on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 1rem;
+    }
+
+    .nav-links a {
+        padding: 8px 16px;
+        /* Slightly smaller padding for mobile */
+    }
+}
+
+
+
+
+#hero {
+    background-image: linear-gradient(25deg, #3d21a0, #5165ae, #50a4bb, #24e5c6);
+    height: 625px;
+}
+
+#internship-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Update your existing CSS for the "Explore Courses" button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #3498db;
+    /* Blue background color */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    /* Darker blue background on hover */
+    transform: scale(1.05);
+    /* Slight scale increase on hover */
+}
+
+.cta-button:active {
+    transform: scale(0.95);
+    /* Slight scale decrease when button is clicked */
+}
+
+.cta-button:focus {
+    outline: none;
+    /* Remove outline on button focus */
+}
+
+/* Add a subtle shadow to the button */
+.cta-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a smooth transition for the shadow */
+.cta-button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.about-content,
+.courses-content,
+.community-content,
+.contact-content {
+    padding: 5rem 0;
+    text-align: center;
+    color: #333;
+    /* Dark text color for better contrast */
+}
+
+#internship {
+    background-image: linear-gradient(25deg, rgb(61, 33, 160), rgb(81, 101, 174), rgb(80, 164, 187), rgb(36, 229, 198));
+}
+
+#internship-heading {
+    padding-top: 40px;
+    color: white;
+}
+
+.internship-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    background-color: white;
+}
+
+.internship-card img {
+    max-width: 100%;
+}
+
+.internship-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #5165ae;
+    /* Dark blue-purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.internship-button:hover {
+    background-color: #50a4bb;
+    /* Light blue on hover */
+}
+
+#contact {
+    background-image: linear-gradient(25deg, rgb(61, 33, 160), rgb(81, 101, 174), rgb(80, 164, 187), rgb(36, 229, 198));
+}
+
+.contact-content {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    /* Dark purple */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+
+    /* Basic styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        width: 100%;
+        /* Dark text color */
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 15px;
+    }
+
+    #hero {
+        height: 720px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+
+    #intro-image img {
+        width: 300px;
+        margin-left:0px;
+    }
+
+    .internship-card {
+        font-size: 1rem;
+    }
+
+    #internship-heading {
+        padding: 10px;
+
+    }
+
+    .internship-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .internship-card {
+        margin: 1rem 0;
+        /* Adjust margin for mobile layout */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        /* Align items back to center for mobile */
+    }
+
+    .nav-links {
+        /* margin-top: 1rem;
+        margin-left: 20px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-links li a {
+        font-size: 10px;
+    }
+}
+
+
+/* Media query for larger screens (e.g., desktops) */
+@media (min-width: 768px) {
+    .internship-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Display 2 cards in a row */
+        gap: 2rem;
+    }
+
+    .internship-card {
+        /* Adjust card width, padding, etc. for desktop layout */
+    }
+}
+
+/* Media query for even larger screens (e.g., wide desktops) */
+@media (min-width: 1200px) {
+    .internship-content {
+        grid-template-columns: repeat(4, 1fr);
+        /* Display 4 cards in a row */
+    }
+}
+
+/* Media query for even larger screens (e.g., tablets) */
+@media (min-width: 375px) {}
